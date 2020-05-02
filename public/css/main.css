@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body * {
+    font-family: 'Roboto';
+}
+
+body i {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 24px;
+}
+
+/* FORM FIELD COMPONENT - BEGIN */
+
+.form-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+.form-field input {
+    width: calc(100% - 40px);
+    position: absolute;
+    padding: 15px 20px;
+    height: calc(100% - 30px);
+    border-radius: 35px;
+    border: 1px solid #E1E1E1;
+    transition: all .25s ease-in-out;
+}
+
+.form-field input:focus {
+    outline: 0;
+    border-color: #FF0000;
+}
+
+.form-field label {
+    color: #707070;
+    position: absolute;
+    width: fit-content;
+    background-color: white;
+    left: 2ch;
+}
+
+.form-field input:focus ~ label {
+    font-size: 12px;
+    top: 0;
+    text-indent: 1ch;
+    padding-right: 1ch;
+    transform: translateY(-50%);
+    color: #FF0000;
+    transition: all .25s ease-in-out;
+}
+
+.form-field i {
+    position: absolute;
+    color: black;
+    right: 1ch;
+}
+
+/* FORM-FIELD-COMPONENT END */
+
+/* SIDEBAR-MAP-COMPONENT BEGIN */
+
+.sidebar-map {
+    width: 30vw;
+    background-color: white;
+    background-image: url(../../assets/bg-side.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 5px 0 6px 0 rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-map img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.sidebar-map ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.sidebar-map ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sidebar-map ul li i {
+    margin-right: 15px;
+}
+
+.group-button {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.group-button button {
+    margin-bottom: 15px;
+}
+
+/* SIDEBAR-MAP-COMPONENT END */
+
+/* LOADING-COMPONENT BEGIN */
+
+.container-total {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(../../../assets/bg-loading.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-total i {
+    color: #FF0000;
+    font-size: 5vw;
+    animation: rotation-infinite .5s linear 0s infinite;
+}
+
+@keyframes rotation-infinite {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* LOADING-COMPONENT END */
+
+/* HEADER-STORE-COMPONENT BEGIN */
+
+.header-store {
+    height: 80px;
+    padding: 0 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF0000;
+}
+
+.header-store .form-field {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header-store .form-field input {
+    border: 0;
+}
+
+.header-store .group-link {
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER-STORE-COMPONENT END */
+
+/* BUTTONS BEGIN */
+
+[class*="mat-button"] {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .25);
+    background-position: center;
+    transition: background 0.8s;
+}
+
+[class*="mat-button"]:focus,
+[class*="mat-button"]:active {
+    outline: 0;
+}
+
+[class*="mat-button"] span {
+    text-transform: uppercase;
+}
+
+.mat-button-filled.color-primary {
+    background-color: #FF0000;
+    color: white;
+}
+
+.mat-button-filled.color-primary:hover {
+    background: #FB2828 radial-gradient(circle, transparent 1%, #FB2828 1%) center/15000%;
+}
+
+.mat-button-filled.color-primary:active {
+    background-color: #FF0000;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.mat-button-rounded.color-primary {
+    background-color: white;
+    border-color: #FF0000;
+    color: #FF0000;
+}
+
+.mat-button-rounded.color-primary:hover {
+    background: #FB282811 radial-gradient(circle, transparent 1%, #FB282811 1%) center/15000%;
+}
+
+.mat-button-rounded.color-primary:active {
+    background-color: white;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+[class*="mat-icon-button"] {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+[class*="mat-icon-button"]:focus {
+    outline: 0;
+}
+
+[class*="mat-icon-button"]:hover {
+    background: #FB2828 radial-gradient(circle, transparent 1%, #FB2828 1%) center/15000%;
+}
+
+[class*="mat-icon-button"]:active {
+    background-color: transparent;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/* BUTTONS END */
