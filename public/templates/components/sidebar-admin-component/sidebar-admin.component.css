@@ -1,0 +1,22 @@
+.sidebar-admin {
+    height: calc(100vh - 40px);
+    width: 15vw;
+    padding: 20px;
+    background-color: #171717;
+    color: white;
+}
+
+.sidebar-admin ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.sidebar-admin ul li {
+    margin: 15px 0;
+}
+
+.sidebar-admin ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
