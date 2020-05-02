@@ -14,7 +14,7 @@ body i {
     font-size: 24px;
 }
 
-aside {
+.sidebar-map {
     width: 30vw;
     background-color: white;
     background-image: url(../../../assets/bg-side.png);
@@ -28,24 +28,24 @@ aside {
     flex-direction: column;
 }
 
-aside img {
+.sidebar-map img {
     width: 100%;
     height: 270px;
     object-fit: cover;
 }
 
-aside ul {
+.sidebar-map ul {
     list-style: none;
     padding-inline-start: 0;
 }
 
-aside ul li {
+.sidebar-map ul li {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
 
-aside ul li i {
+.sidebar-map ul li i {
     margin-right: 15px;
 }
 
