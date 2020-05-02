@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body * {
+    font-family: 'Roboto';
+}
+
+body i {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 24px;
+}
+
+.container-total {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(../../../assets/bg-loading.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-total i {
+    color: #FF0000;
+    font-size: 5vw;
+    animation: rotation-infinite .5s linear 0s infinite;
+}
+
+@keyframes rotation-infinite {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
