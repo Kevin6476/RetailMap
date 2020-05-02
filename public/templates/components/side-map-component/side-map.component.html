@@ -1,34 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Side-Map component</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="side-map.component.css">
-</head>
-<body>
-    <!-- PARAMETROS Nome_loja Telefone E-mail -->
-    <aside class="sidebar-map">
-        <img src="../../../assets/placeholder.png" alt="">
-        <h1>Nome da loja</h1>
-        <ul>
-            <li>
-                <i>phone</i>
-                Telefone
-            </li>
-            <li>
-                <i>mail</i>
-                E-mail
-            </li>
-        </ul>
-        <div class="group-button">
-            <button class="mat-button-filled color-primary"><span>Ver galeria</span> <i>keyboard_arrow_right</i></button>
-            <button class="mat-button-rounded color-primary"><span>Visitar loja</span> <i>keyboard_arrow_right</i></button>
-        </div>
-    </aside>
-</body>
-
-</html>
+<!-- PARAMETROS Nome_loja Telefone E-mail -->
+<aside class="sidebar-map">
+    <img src="../../../assets/placeholder.png" alt="">
+    <h1>{{nomeLoja}}</h1>
+    <ul>
+        <li>
+            <i>phone</i>
+            {{telefone}}
+        </li>
+        <li>
+            <i>mail</i>
+            {{eMail}}
+        </li>
+    </ul>
+    <div class="group-button">
+        <button class="mat-button-filled color-primary"><span>Ver galeria</span> <i>keyboard_arrow_right</i></button>
+        <button class="mat-button-rounded color-primary"><span>Visitar loja</span> <i>keyboard_arrow_right</i></button>
+    </div>
+</aside>
