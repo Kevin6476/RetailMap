@@ -1,0 +1,24 @@
+{
+  "name": "retailmap",
+  "version": "1.0.0",
+  "description": "Protótipo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevin6476/RetailMap.git"
+  },
+  "author": "Kevin, Andre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kevin6476/RetailMap/issues"
+  },
+  "homepage": "https://github.com/Kevin6476/RetailMap#readme",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "nedb": "^1.1.2"
+  }
+}
