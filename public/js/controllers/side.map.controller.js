@@ -1,11 +1,11 @@
 angular.module('retailmap')
-    .controller('sideMapCrtl', ['$scope', function($scope) {
+    .controller('sideMapCrtl', ['$scope', '$location', function($scope, $location) {
 
         $scope.verGaleria =   function(){
             alert('VIU A GALERIA');
         };
         $scope.visitarLoja =  function (){
-            alert('VISITOU A LOJA :) !!');
+            $location.path('/store');
         };
         $scope.closeSide = function() {
             var sidebar = document.querySelector('.sidebar-map');

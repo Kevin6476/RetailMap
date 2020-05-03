@@ -5,6 +5,11 @@ angular.module('retailmap', ['ngAnimate', 'ngRoute', 'ngResource', 'retailmapDir
 
 		$routeProvider.when('/', {
 			templateUrl: 'templates/pages/index.html',
+			controller: ['$scope', '$location', function($scope, $location) {
+				$scope.redirectToClient = function() {
+					$location.path('/client');
+				}
+			}]
 		})
 		.when('/client', {
 			templateUrl: 'templates/pages/client.html',
