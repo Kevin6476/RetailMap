@@ -37,23 +37,40 @@ angular.module('retailmapDirectives', [])
         }
     })
     .directive('headerStoreComponent', function() {
-            return {
-                restrict: 'E',
-                templateUrl: '../templates/components/header-store-component/header-store.component.html',
-                controller: 'headerStoreCtrl'
-                // scope: {
-                //     CAMPO: '', 
-                // }
-            }
-        });
-
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/components/header-store-component/header-store.component.html',
+            controller: 'headerStoreCtrl'
+        }
+    })
+    .directive('menuStoreComponent', function() {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/components/menu-store-component/menu-store.component.html',
+            controller: 'menuStoreCtrl'
+        }
+    })
+    .directive('sideStoreCompoenent', function() {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/components/side-store-component/side-store.component.html',
+            controller: 'sideStoreCtrl'
+        }
+    })
+    .directive('sideBarAdminComponent', function() {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/components/sidebar-admin-component/sidebar-admin.component.html',
+            controller: 'sideBarAdminCtrl'
+        }
+    });
 
 
 
     // .directive('', function() {
     //     return {
-    //         restrict: '',
-    //         templateUrl: '',
+    //         restrict: 'E',
+    //         templateUrl: '../templates/components/',
     //         controller: '',
     //         scope: {
     //             CAMPO: '', 
