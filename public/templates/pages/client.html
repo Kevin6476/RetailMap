@@ -1,5 +1,5 @@
 <style>
-    .wrapper {
+    /* .wrapper {
         display: flex;
         align-items: center;
         padding: 20px 20px;
@@ -20,16 +20,27 @@
         margin: 20px;
         height: 80vh;
         border: 1px solid #e1e1e1;
+    } */    
+
+    #map {
+      height: 80vh;
+      height: 80vw;
     }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
 </style>
 <div class="wrapper">
     <form-field-component class="fx-2" placeholder="Ex.: Loja de construção" id="filter-map" icon="search" label="Busque por nome"></form-field-component>
     <form-field-component class="fx-1" placeholder="Ex.: 10km" id="distance-map" icon="map" label="Distância em Km"></form-field-component>
 </div>
-<div class="container-page">
-    <!-- O mapa deve renderizar aqui -->
-    <div class="map-wrapper">
-        <canvas id="map"></canvas>
-    </div>
-    <side-map-component nome-loja="Teste" telefone="(11)11111-1111" e-mail="teste@teste.teste"></side-map-component>
-</div>
+<!-- <div class="container-page"> -->
+    <!-- <div class="map-wrapper"> -->
+        <!-- <canvas id="map"></canvas> -->
+    <!-- </div>  -->
+    <!-- <side-map-component nome-loja="Teste" telefone="(11)11111-1111" e-mail="teste@teste.teste"></side-map-component> -->
+<!-- </div> -->
+<div id="map"></div>
