@@ -1,33 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Store component</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="header-store.component.css">
-</head>
-<style>
-
-</style>
-<body>
-    <header>
-        <button class="mat-icon-button">
-            <i>arrow_back</i>
+<header class="header-store">
+    <button class="mat-icon-button" ng-click="arrowBack()">
+        <i>arrow_back</i>
+    </button>
+    <div class="form-field">
+        <input type="text" id="filter-product" placeholder="Busque por produtos" ng-model="inputSeachHeader" > 
+        <i>search</i>
+    </div>
+    <div class="group-link">
+        <button class="mat-icon-button" ng-click="star()">
+            <i>star</i>
         </button>
-        <div class="form-field">
-            <input type="text" id="filter-product" placeholder="Busque por produtos">
-            <i>search</i>
-        </div>
-        <div class="group-link">
-            <button class="mat-icon-button">
-                <i>star</i>
-            </button>
-            <button class="mat-icon-button">
-                <i>shopping_cart</i>
-            </button>
-        </div>
-    </header>
-</body>
-</html>
+        <button class="mat-icon-button" ng-click="shoppingCart()">
+            <i>shopping_cart</i>
+        </button>
+    </div>
+</header>

@@ -3,11 +3,28 @@ angular.module('retailmap', ['ngAnimate', 'ngRoute', 'ngResource', 'retailmapDir
 
 		$locationProvider.html5Mode(true);
 
-		$routeProvider.when('/main', {
-			templateUrl: 'templates/principal.html',
+		$routeProvider.when('/', {
+			templateUrl: 'templates/pages/index.html',
+			controller: ['$scope', '$location', function($scope, $location) {
+				$scope.redirectToClient = function() {
+					$location.path('/client');
+				}
+			}]
+		})
+		.when('/client', {
+			templateUrl: 'templates/pages/client.html',
 			controller: 'controllerMain'
+		})
+		.when('/store', {
+			templateUrl: 'templates/pages/store.html',
+		})
+		.when('/admin', {
+			templateUrl: 'templates/pages/admin.html'
+		})
+		.when('/***/', {
+			templateUrl: 'templates/pages/404.html'
 		});
 
-		$routeProvider.otherwise({redirectTo: '/main'});
+		$routeProvider.otherwise({redirectTo: '/***/'});
 
 	});

@@ -1,0 +1,138 @@
+.container-index {
+    background-image: url(../assets/bg-index.png);
+    background-size: cover;
+    height: calc(100vh - 40px);
+    width: 70vw;
+    position: relative;
+    z-index: 2;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container-index img {
+    margin-top: 20px;
+    width: 60%;
+    object-fit: contain;
+}
+
+.container-index p {
+    margin-top: 30px;
+    font-size: 1.5vw;
+    width: 100%;
+    color: #707070;
+    font-style: italic;
+}
+
+.container-index .container-button {
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-fundo {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: #FF0000;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+    .container-index {
+        width: calc(100vw - 100px);
+        justify-content: center;
+    }
+
+    .container-index p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container-index .container-button {
+        justify-content: center;
+    }
+
+    .img-fundo {
+        display: none;
+    }
+}
+
+.container-store {
+    display: flex;
+    width: 100vw;
+}
+
+.container-store .wrapper-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: calc(100% - 210px);
+}
+
+.container-store .wrapper-cards card-component {
+    width: 30%;
+}
+
+@media screen and (max-width: 700px) {
+    .container-store .wrapper-cards card-component {
+        width: 100%;
+    }   
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    width: calc(100% - 40px);
+}
+
+.wrapper .fx-2 {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.wrapper .fx-1 {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.map-wrapper {
+    margin: 20px;
+    height: 80vh;
+    border: 1px solid #e1e1e1;
+}
+
+.map-wrapper #map {
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .wrapper [class*="fx"] {
+        width: 100%;
+    }
+
+    .wrapper .fx-2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .wrapper .fx-1 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .map-wrapper {
+        height: 65vh;
+    }
+}

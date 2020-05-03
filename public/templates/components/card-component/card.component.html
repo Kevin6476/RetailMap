@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card component</title>
-</head>
-<body>
-    <div class="card">
-        <div class="card-image">
-            <img src="../../../assets/placeholder.png" alt="">
+<div class="card">
+    <div class="card-image">
+        <img src="../../../assets/placeholder.png" alt="">
+    </div>
+    <div class="card-content">
+        <h3>{{nomeItem}}</h3>
+        <span>Quantidade: {{quantidade}}</span>
+        <hr>
+        <div class="card-actions">
+            <span class="price">R$ {{valor}}</span>
+            <button class="mat-icon-button color-primary">
+                <i>add</i>
+            </button>
+            <button class="mat-icon-button stroked">
+                <i>star</i>
+            </button>
         </div>
     </div>
-</body>
-</html>
+</div>
