@@ -63,8 +63,14 @@ angular.module('retailmapDirectives', [])
             templateUrl: '../templates/components/sidebar-admin-component/sidebar-admin.component.html',
             controller: 'sideBarAdminCtrl'
         }
+    })
+    .directive('headerAdminComponent', function() {
+        return {
+            restrict: 'E',
+            templateUrl: '../templates/components/header-admin-component/header-admin.component.html',
+            controller: 'headerAdminCtrl',
+        }
     });
-
 
 
     // .directive('', function() {
@@ -72,8 +78,5 @@ angular.module('retailmapDirectives', [])
     //         restrict: 'E',
     //         templateUrl: '../templates/components/',
     //         controller: '',
-    //         scope: {
-    //             CAMPO: '', 
-    //         }
     //     }
     // });
