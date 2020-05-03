@@ -74,6 +74,8 @@ body i {
     background-repeat: no-repeat;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     padding: 20px;
     box-shadow: 5px 0 6px 0 rgba(0, 0, 0, .25);
     display: flex;
@@ -247,7 +249,7 @@ body i {
     outline: 0;
 }
 
-[class*="mat-icon-button"]:hover {
+[class*="mat-icon-button"]:not(.color-primary):not(.stroked):hover {
     background: #FB2828 radial-gradient(circle, transparent 1%, #FB2828 1%) center/15000%;
 }
 
@@ -273,8 +275,7 @@ body i {
 
 .card {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .25);
-    padding: 20px;
-    height: 45vh;
+    padding: 20px 20px 0;
 }
 
 .card-image {
@@ -293,6 +294,10 @@ body i {
 .card-content {
     display: flex;
     flex-direction: column;
+}
+
+.card-content hr {
+    margin-top: 0;
 }
 
 .card-content h3 {
