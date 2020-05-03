@@ -1,5 +1,8 @@
 <!-- PARAMETROS Nome_loja Telefone E-mail -->
 <aside class="sidebar-map">
+    <button class="mat-icon-button filled close" ng-click="closeSide()">
+        <i>close</i>
+    </button>
     <img src="../../../assets/placeholder.png" alt="">
     <h1>{{nomeLoja}}</h1>
     <ul>
@@ -13,7 +16,7 @@
         </li>
     </ul>
     <div class="group-button">
-        <button class="mat-button-filled color-primary" ng-click="verGaleria()"><span>Ver galeria</span> <i>keyboard_arrow_right</i></button>
+        <!-- <button class="mat-button-filled color-primary" ng-click="verGaleria()"><span>Ver galeria</span> <i>keyboard_arrow_right</i></button> -->
         <button class="mat-button-rounded color-primary" ng-click="visitarLoja()"><span>Visitar loja</span> <i>keyboard_arrow_right</i></button>
     </div>
 </aside>
