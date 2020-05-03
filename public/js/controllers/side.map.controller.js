@@ -7,4 +7,8 @@ angular.module('retailmap')
         $scope.visitarLoja =  function (){
             alert('VISITOU A LOJA :) !!');
         };
+        $scope.closeSide = function() {
+            var sidebar = document.querySelector('.sidebar-map');
+            return sidebar.classList.remove('side-show');
+        }
     }]);
