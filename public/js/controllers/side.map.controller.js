@@ -5,7 +5,7 @@ angular.module('retailmap')
             alert('VIU A GALERIA');
         };
         $scope.visitarLoja =  function (){
-            $location.path('/store');
+            $x.path('/store');
         };
         $scope.closeSide = function() {
             var sidebar = document.querySelector('.sidebar-map');

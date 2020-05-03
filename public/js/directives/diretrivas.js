@@ -8,7 +8,8 @@ angular.module('retailmapDirectives', [])
                 id: '@', 
                 placeholder: '@', 
                 icon : '@', 
-                label: '@'
+                label: '@',
+                name: '@'
             }
        } 
     })
