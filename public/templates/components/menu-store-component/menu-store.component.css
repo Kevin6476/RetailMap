@@ -1,0 +1,15 @@
+.menu-store {
+    height: calc(100vh - 40px); 
+    width: 10vw;
+    padding: 20px 10px;
+    border-right: 1px solid #E1E1E1;
+}
+
+.menu-store ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.menu-store ul .caption h5 {
+    text-transform: uppercase;
+}

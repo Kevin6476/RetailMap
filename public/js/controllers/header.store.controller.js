@@ -8,5 +8,17 @@ angular.module('retailmap')
             }
         });
 
+        $scope.arrowBack = function () {
+            alert('Arrow Back');
+        };
+
+        $scope.shoppingCart = function () {
+            alert('Shopping Cart');
+        };
+
+        $scope.star = function () {
+            alert('Star');
+        };
+
 
 	}]);

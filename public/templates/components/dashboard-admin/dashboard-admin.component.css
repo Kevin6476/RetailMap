@@ -1,0 +1,25 @@
+.product-notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #FF0000;
+}
+
+.product-notification h3 {
+    margin: 0;
+}
+
+.product-notification .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 1px solid;
+}
+
+.product-notification .tag.tag-cliente {
+    color: #00D594;
+    border-color: #00D594;
+}
